@@ -9,11 +9,11 @@ submit.addEventListener("click",() => {
 	}
 	const myPromise = new Promise((resolve,reject) => {
 		setTimeout(()=>{
-			if (age>=18) {
-				resolve(`Welcome, ${name}. You can vote.`);
+			if (age.value>=18) {
+				resolve(`Welcome, ${name.value}. You can vote.`);
 			}
 			else{
-				reject(`Oh sorry ${name}. You aren't old enough.`)
+				reject(`Oh sorry ${name.value}. You aren't old enough.`)
 			}
 		},4000);
 	});
