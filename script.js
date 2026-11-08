@@ -4,16 +4,16 @@ const name = document.getElementById("name");
 const submit = document.getElementById("submit");
 
 submit.addEventListener("click",() => {
-	if (age==="" || name==="") {
+	if (age.value==="" || name.value==="") {
 		alert("Please enter valid details.");
 	}
 	const myPromise = new Promise((resolve,reject) => {
 		setTimeout(()=>{
 			if (age>=18) {
-				resolve("Welcome, . You can vote.");
+				resolve(`Welcome, ${name}. You can vote.`);
 			}
 			else{
-				reject("Oh sorry . You aren't old enough.")
+				reject(`Oh sorry ${name}. You aren't old enough.`)
 			}
 		},4000);
 	});
