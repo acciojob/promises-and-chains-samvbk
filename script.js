@@ -1,7 +1,7 @@
 //your JS code here. If required.
 const age = document.getElementById("age");
 const name = document.getElementById("name");
-const submit = document.getElementById("submit");
+const submit = document.getElementById("btn");
 
 submit.addEventListener("click",() => {
 	if (age.value==="" || name.value==="") {
